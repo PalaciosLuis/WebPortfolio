@@ -1,324 +1,138 @@
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif;
-padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Roboto+Slab&family=Roboto:wght@500&display=swap');
 
+:root{
+
+    --color-body:#B3B3B3;
+    --color-heading:#eef3db;
+    --color-base:#645F73;
+    --color-base2:#8D63FF;
+    --color-brand:#666666;
+    --color-brand2:#666666;
+    --sidbar-width:240px;
+    --font-base:"Bai Jamjuree";
 }
 
+body{
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base),sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-heading);
+    font-weight: 700;
+}
 
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 767px) {
+a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+a:hover{
+    color: var(--color-brand);
     
-/* HEADER-NAV */
-.container {
-    width: 650px;
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    background-color: #242041;
-    
+}
+img{
+    width: 100%;
 
 }
-.container a{
-    color: #ffff;
-}
-
-nav l1 { 
-    padding: 20px;
+.text-brand{
+    color: var(--color-brand);
 
 }
+.full-height{
 
-
-.container li {
-    
-
-    list-style: none;
-}
-
-
-/* PROFILE-FACE */
-
-main {
-    width: 650px;
+    min-height:100vh ;
+    height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(218, 200, 200, 0.1);
+}
+
+/*NAVBAR*/
+.navbar{
+    background-color: var(--color-base2);
 
 }
 
-.data {
-    
-    padding: 20px;
-}
-
-.info_me {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.navbar .nav-link  {
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #fff;
 
 }
 
-
-.info {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-
-}
-
-.img-profile img {
-    width: 350px;
-    height: 500px;
-    border-radius: 50%;
+.navbar .nav-link:hover{
+   color: var(--color-base);
 
 
 }
+@media(min-width:992px){
+    .navbar{
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(rgb(122, 74, 255),rgb(122, 83, 231));
+        background-size: cover;
+        background-position: center;
+
+    }
+    .navbar-brand img{
+        border: 8px solid var(--color-base);
+    }
+    /* CONTENT WRAPPER */
+    #content-wrapper{
+        padding-left:var(--sidbar-width) ;
 
 
-/* =========================================== */
-.skills {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    align-items: center;
-   
-
-
-}
-
-.skills img {
-   
-    width: 10rem;
-
-}
-
-/* PROYECTS --------------------------- */
-.proyects {
-    align-items: center;
-}
-
-
-
-.proyects img {
-    width: 610px;
-}
-
-/* footer======================*/
-footer {
-
-    background-color: #242041;
-    text-align: center;
-    width: 650px;
-    
-
-}
-
-.social-icons {
-    justify-content: center;
-    padding: 20px;
-    width: 600px;
-   
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-
-
-}
-
-.social-icons a {
-   
-    border-radius: 50%;
-    align-items: center;
-    background-color: 
-    #D2C10B;
-    padding: 20px;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    
-}
-box-icon{
-    padding-top: 1px;
-    width: 40px;
-   
-    
-}
-    
-  }
-  
-
-  /* ======================================================== */
-  /* Estilos para pantallas más grandes (escritorio) */
-  @media screen and (min-width: 768px) {
-    /* HEADER-NAV */
-.container {
-   
-   padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    background-color: #242041;
-   
-    
-
-}
-.container a{
-    color: #ffff;
-}
-
-nav l1 { 
-    padding-left: 70px;
-
-}
-
-.container li {
-    list-style: none;
-}
-
-
-/* PROFILE-FACE */
-
-main {
-   
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red;
-  
-
-}
-
-.data {
-   
-    padding: 20px;
-    border: 1px solid red;
-}
-
-.info_me {
-    border: 1px solid red;
-    
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    text-align: center;
-
-}
-
-
-.info {
-    border: 1px solid red;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-
-}
-
-.img-profile img {
-    width: 300px;
-    border-radius: 50%;
+    }
+    /* ============= */
 
 
 }
 
 
-/* =========================================== */
-.skills{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: auto;
-    
-    
+/* ======BTN====== */
+.btn{
+   padding: 12px 28px;
+   font-weight: 700; 
 }
-.skillsimg {
-   
-    padding: 20px;
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    align-items: center;
-   
-   
-
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base2);
 
 }
-
-.skills img {
-    border: 1px solid red;
-   
-    width: 10rem;
-
-}
-
-/* PROYECTS --------------------------- */
-.proyects {
-    border: 1px solid red;
-    align-items: center;
-}
-
-
-
-
-
-/* footer======================*/
-footer {
-
-    border: 1px solid red;
-    background-color: #242041;
-    text-align: center;
-   
-    
+.btn-brand:hover, .btn-brand:focus{
+    background-color: var(--color-brand2);
+    color: var(--color-base2);
+    border-color: var(--color-brand2);
 
 }
+.link-custom {
+    font-weight: 700;
+    position: relative;
 
-.social-icons {
-    justify-content: center;
-    padding: 20px;
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
+
+}
+.link-custom::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
 
 
 }
 
-.social-icons a {
-   
-    border-radius: 50%;
-    align-items: center;
-    background-color: 
-    #D2C10B;
-    padding: 20px;
-    display: inline-block;
-    width: 40px;
-    border: 1px solid red;
-    height: 40px;
-    
-}
-box-icon{
-    padding-top: 1px;
-    width: 40px;
-    border: 1px solid red;
-   
-    
-}
-    
-  }
-  
+.link-custom:hover::after{
+    width: 100%;
 
-/* colores
 
-#D2C10B --dorado
-blanco--FCFCFC
-azul--242041
-*/
+}
+
+

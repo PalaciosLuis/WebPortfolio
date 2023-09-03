@@ -3,122 +3,89 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luis Palacios</title>
-    <link rel="stylesheet" href="./style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@500&display=swap');
-      </style>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <span class="h3 fw-bold d-block d-lg-none">Luis Palacios</span>
+                <img src="./img/perfil.jpg" class="d-none d-lg-block rounded-circle" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto flex-lg-column text-lg-center">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" aria-current="page" href="#services">Services</a>
+                    <a class="nav-link" aria-current="page" href="#work">Work</a>
+                    <a class="nav-link" aria-current="page" href="#about">About</a>
+                    <a class="nav-link" aria-current="page" href="#contact">Contact</a>
 
 
-        <header>
-            <ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ===== -->
 
-                <li> <a href="#">Luis Palacios</a></li>
+    <!-- CONTENT -->
+    <div id="content-wrapper" >
+        <!-- Home -->
+        <section id="home" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold">
+                            I,M A <span class="text-brand">BACKEND DEVELOPER</span> FROM PERU
+                        </h1>
+                        <P class="lead mt-2 mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vitae quos incidunt ut
+                            debitis ullam, perspiciatis mollitia est, eum vel dolore quae hic, ex voluptatum soluta!
+                            Ratione eveniet pariatur aliquam?
+                        </P>
+                        <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                        <a href="#" class="link-custom">Call: (51) 924792520</a>
 
-            </ul>
+
+                    </div>
 
 
-        </header>
-        <nav>
 
-            <ul>
-
-                <l1><a href="#">Sobre mi</a></l1>
-                <l1><a href="#">Habilidades</a></l1>
-                <l1><a href="#">Proyectos</a></l1>
-                <l1><a href="#">Contacto</a></l1>
+                </div>
 
 
-            </ul>
-        </nav>
+            </div>
+
+           
+
+
+        </section>
+        <!-- ==== -->
+
+        <!-- SRVICES -->
+
+        
+        <!-- =========== -->
+
+
     </div>
 
-
-    <main>
-        <div class="data">
-            <section class="info_me">
-
-                <div class="img-profile">
-                    <img src="./img/perfil.jpg" alt="perfil">
-
-                </div>
-
-                <div class="info">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere doloremque architecto ducimus
-                        quibusdam maiores sint veritatis consequatur ab nam reiciendis, quaerat tempora, voluptatum ut
-                        itaque! Sunt aliquid ad veritatis dolor?</p>
-
-                </div>
-
-
-            </section>
-
-        </div>
-
-        <section class="skills">
-            
-            <div class="skillsimg">
-                
-            <img src="./img/java.png" alt="java">
-            <img src="./img/basic.png" alt="hjc">
-            <img src="./img/sqlserver.svg" alt="sqlserver">
-            <img src="./img/mysql.png" alt="mysql">
-            <img src="./img/Bootstrap-Logo.png" alt="bootstrap">
-            <img src="./img/framework net.png" alt=".net">
-            <img src="./img/c.png" alt="">
-            <img src="./img/git.webp" alt="">
-            <img src="./img/visual.jpg" alt="">
-
-
-            </div>
-
-
-
-
-        </section>
-
-        <section class="proyects">
-            <div class="proyect01">
-                <img src="../img/ejmp.png" alt="web">
-            </div>
-
-
-
-        </section>
-
-
-
-
-    </main>
-
-    <footer>
-        <div class="social-icons">
-            <div class="icons"><a href=""><box-icon name='github' type='logo' ></box-icon></a></div>
-            <div class="icons"><a href=""> <box-icon name='linkedin' type='logo'></box-icon></a></div>
-            <div class="icons"> <a href=""><box-icon name='instagram' type='logo'></box-icon></a></div>
-            
-            
-           
-            
-           
-            
-        </div>
-        <p>© 2023 LuisJavier. Todos los derechos reservados.</p>
-    </footer>
+    <!-- =========== -->
 
 
 </body>
-<script src="../js/index.js"></script>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 
 </html>
