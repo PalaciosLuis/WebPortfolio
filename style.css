@@ -5,9 +5,9 @@
     --color-body:#B3B3B3;
     --color-heading:#eef3db;
     --color-base:#645F73;
-    --color-base2:#8D63FF;
-    --color-brand:#666666;
-    --color-brand2:#666666;
+    --color-base2:#443277;
+    --color-brand:#63639a;
+    --color-brand2:#ffff;
     --sidbar-width:240px;
     --font-base:"Bai Jamjuree";
 }
@@ -28,7 +28,7 @@ a{
     transition: all 0.4s ease;
 }
 a:hover{
-    color: var(--color-brand);
+    color: var(--color-brand2);
     
 }
 img{
@@ -41,6 +41,9 @@ img{
 }
 .bg-base{
     background-color: var(--color-base);
+}
+.text-brand2{
+    color: var(--color-brand2);
 }
 
 .full-height{
@@ -100,7 +103,7 @@ img{
     .navbar{
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgb(122, 74, 255),rgb(122, 83, 231));
+        background: linear-gradient(rgb(30, 19, 61),rgb(27, 19, 48));
         background-size: cover;
         background-position: center;
 
@@ -177,3 +180,40 @@ img{
     transform: scale(1.1);
 }
 
+/* CONTACT */
+#contact .form-control{
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+  
+
+}
+#contact .form-control:focus{
+    border-color: var(--color-brand2);
+    box-shadow: none;
+
+}
+#contact .form-control::placeholder{
+    color: var(--color-body);
+}
+
+#contact input.form-control{
+    height: 44px;
+
+}
+
+/* SOCIAL ICONS */
+
+
+.social-icons a{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+
+    
+}
