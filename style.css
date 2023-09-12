@@ -2,12 +2,12 @@
 
 :root{
 
-    --color-body:#B3B3B3;
-    --color-heading:#eef3db;
-    --color-base:#645F73;
-    --color-base2:#443277;
-    --color-brand:#63639a;
-    --color-brand2:#ffff;
+    --color-body:#ffffff;
+    --color-heading:#ffffff;
+    --color-base:#18095c84;
+    --color-base2:#5081af;
+    --color-brand:#ece631;
+    --color-brand2:#ede216;
     --sidbar-width:240px;
     --font-base:"Bai Jamjuree";
 }
@@ -103,7 +103,7 @@ img{
     .navbar{
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgb(30, 19, 61),rgb(27, 19, 48));
+        background: linear-gradient(rgb(21, 131, 178),rgb(27, 19, 48));
         background-size: cover;
         background-position: center;
 
